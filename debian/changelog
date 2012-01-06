@@ -1,0 +1,83 @@
+xrestop (0.4-7slp2) unstable; urgency=low
+
+  * Reupload (modify debian/changelog)
+  * Git: 165.213.180.234:/git/slp/pkgs/xorg/app/xrestop
+  * Tag: xrestop_0.4-7slp2
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Fri, 26 Nov 2010 13:13:25 +0900
+
+xrestop (0.4-6slp2) unstable; urgency=low
+
+  * Change revision
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Thu, 25 Mar 2010 18:03:19 +0900
+
+xrestop (0.4-5) unstable; urgency=low
+
+  * Import debian package
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Wed, 17 Feb 2010 10:06:22 +0900
+
+xrestop (0.4-4) unstable; urgency=low
+
+  * Update X11 Build-Depends.  Closes: #515443.
+
+ -- Moray Allan <moray@debian.org>  Sat, 25 Jul 2009 16:26:51 +0200
+
+xrestop (0.4-3) unstable; urgency=low
+
+  * Update Debian menu file for new menu policy.
+
+ -- Moray Allan <moray@debian.org>  Sun, 16 Mar 2008 20:12:41 +0100
+
+xrestop (0.4-2) unstable; urgency=low
+
+  * Show correct display name when -d not used.  Closes: #447527.
+
+ -- Moray Allan <moray@debian.org>  Fri, 16 Nov 2007 18:54:22 +0000
+
+xrestop (0.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Can now quit by pressing Q.  Closes: #333285.
+
+ -- Moray Allan <moray@debian.org>  Sat,  4 Mar 2006 00:45:28 +0000
+
+xrestop (0.3-3) unstable; urgency=low
+
+  * Fix man page.  Closes: #343547.
+
+ -- Moray Allan <moray@debian.org>  Sat, 14 Jan 2006 18:54:37 +0000
+
+xrestop (0.3-2) unstable; urgency=low
+
+  * Add libxres-dev to Build-Depends, remove xlibs-static-dev.
+    Closes: #323992.
+  * Fix watch file URL.
+
+ -- Moray Allan <moray@debian.org>  Sat, 20 Aug 2005 13:12:39 +0100
+
+xrestop (0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Moray Allan <moray@debian.org>  Tue,  7 Jun 2005 00:42:28 +0100
+
+xrestop (0.2-3) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Moray Allan <moray@debian.org>  Thu, 19 Feb 2004 00:15:03 +0000
+
+xrestop (0.2-2) experimental; urgency=low
+
+  * Minor changes to manual page.
+
+ -- Moray Allan <moray@debian.org>  Fri,  6 Feb 2004 23:56:44 +0000
+
+xrestop (0.2-1) experimental; urgency=low
+
+  * Initial release. Closes: #227109.
+
+ -- Moray Allan <moray@debian.org>  Sun, 11 Jan 2004 17:03:28 +0000
+

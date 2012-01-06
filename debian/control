@@ -1,0 +1,20 @@
+Source: xrestop
+Section: x11
+Priority: optional
+Maintainer: Sung-Jin Park <sj76.park@samsung.com>
+#Maintainer: Moray Allan <moray@debian.org>
+Uploaders: Sung-Jin Park <sj76.park@samsung.com>
+Build-Depends: cdbs (>= 0.4.14), debhelper (>= 5.0.0), libncurses5-dev, libxext-dev (>= 4.3.0), libx11-dev (>= 4.3.0), x11proto-core-dev, libxres-dev (>= 4.3.0), libice-dev (>= 4.3.0), pkg-config (>= 0.15.0)
+Standards-Version: 3.8.2
+
+Package: xrestop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: X11 server resource usage monitor
+ xrestop uses the X-Resource extension to provide top(1)-like statistics
+ for each connected X11 client's server-side resource usage. It is intended
+ as a developer tool to aid more efficient server resource usage and debug
+ server-side resource leakage.
+ .
+ xrestop requires the X-Resource extension, supported by XFree86 4.3 and
+ above, and by the freedesktop.org X server.

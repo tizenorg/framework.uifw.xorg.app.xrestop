@@ -1,0 +1,6 @@
+?package(xrestop):\
+ needs="X11"\
+ section="Applications/System/Monitoring"\
+ title="xrestop"\
+ longtitle="xrestop: monitor X11 server resource usage"\
+ command="/usr/bin/xrestop"
