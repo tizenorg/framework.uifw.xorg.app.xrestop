@@ -1,5 +1,4 @@
-
-Name:       xorg-x11-utils-xrestop
+Name:       xorg-app-xrestop
 Summary:    X11 server resource usage monitor
 Version:    0.4
 Release:    7
@@ -38,15 +37,10 @@ above, and by the freedesktop.org X server.
 make %{?jobs:-j%jobs}
 
 %install
-rm -rf %{buildroot}
 %make_install
 
-
-
-
+%docs_package
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/xrestop
-%{_mandir}/man1/xrestop.1.gz
 
