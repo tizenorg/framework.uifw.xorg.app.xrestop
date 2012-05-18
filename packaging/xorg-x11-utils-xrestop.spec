@@ -27,7 +27,7 @@ above, and by the freedesktop.org X server.
 
 
 %prep
-%setup -q -n xrestop-%{version}
+%setup -q -n %{name}-%{version}
 
 
 %build
