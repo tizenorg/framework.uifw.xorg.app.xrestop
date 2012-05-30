@@ -7,6 +7,7 @@ Group:      System/X11
 License:    MIT
 URL:        http://www.x.org
 Source0:    http://xorg.freedesktop.org/releases/individual/app/xrestop-%{version}.tar.gz
+Source1001: packaging/xorg-x11-utils-xrestop.manifest 
 BuildRequires:  pkgconfig(xorg-macros)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  pkgconfig(xext)
@@ -31,6 +32,7 @@ above, and by the freedesktop.org X server.
 
 
 %build
+cp %{SOURCE1001} .
 
 %reconfigure --disable-static \
     --libdir=%{_datadir}
@@ -46,6 +48,7 @@ rm -rf %{buildroot}
 
 
 %files
+%manifest xorg-x11-utils-xrestop.manifest
 %defattr(-,root,root,-)
 %{_bindir}/xrestop
 %{_mandir}/man1/xrestop.1.gz
