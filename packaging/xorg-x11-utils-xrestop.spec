@@ -6,7 +6,7 @@ Release:    7
 Group:      System/X11
 License:    MIT
 URL:        http://www.x.org
-Source0:    http://xorg.freedesktop.org/releases/individual/app/xrestop-%{version}.tar.gz
+Source0:    http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
 Source1001: packaging/xorg-x11-utils-xrestop.manifest 
 BuildRequires:  pkgconfig(xorg-macros)
 BuildRequires:  pkgconfig(ncurses)
