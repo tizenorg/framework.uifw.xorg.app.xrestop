@@ -528,8 +528,8 @@ xrestop_display(XResTopApp *app)
 
       clear();
 
-      mvprintw(0, 0, "xrestop - Display: %s", 
-	       app->dpy_name);
+      mvprintw(0, 0, "xrestop - Display: %s:%i", 
+	       app->dpy_name ? app->dpy_name : "localhost", app->screen);
 
       mvprintw(1, 0, "          Monitoring %i clients. XErrors: %i", app->n_clients, app->n_xerrors);
       mvprintw(2, 0, "          Pixmaps: %8s total, Other: %8s total, All: %8s total", 
@@ -694,11 +694,6 @@ main(int argc, char **argv)
 
     usage(argv[0]);
   }
-
-  if (app->dpy_name == NULL)
-    {
-      app->dpy_name = getenv("DISPLAY");
-    }
 
   if ((app->dpy = XOpenDisplay(app->dpy_name)) == NULL)
     {
