@@ -2,7 +2,7 @@ Summary: X Resource Monitor
 Name: xrestop
 Version: 0.4
 Release: 10
-License: GPLv2+
+License: GPL-2.0+
 Group: Development/Tools
 URL: http://www.freedesktop.org/Software/xrestop
 Source0: %{name}-%{version}.tar.gz
@@ -26,6 +26,8 @@ make %{?jobs:-j%jobs}
 
 %install
 rm -rf "$RPM_BUILD_ROOT"
+mkdir -p %{buildroot}/usr/share/license
+cp -af COPYING %{buildroot}/usr/share/license/%{name}
 make DESTDIR="$RPM_BUILD_ROOT" install
 #SUBDIRS=
 
@@ -36,6 +38,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %defattr(-,root,root,-)
+/usr/share/license/%{name}
 #%doc AUTHORS COPYING NEWS README
 %{_bindir}/xrestop
 #%{_mandir}/man1/xrestop.1*
