@@ -2,7 +2,7 @@ Summary: X Resource Monitor
 Name: xrestop
 Version: 0.4
 Release: 10
-License: GPL-2.0+
+License: GPLv2+
 Group: Development/Tools
 URL: http://www.freedesktop.org/Software/xrestop
 Source0: %{name}-%{version}.tar.gz
